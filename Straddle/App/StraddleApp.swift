@@ -21,7 +21,7 @@ struct RootView: View {
     var body: some View {
         TabView {
             NavigationStack { DashboardView(showingNewSession: $showingNewSession) }
-                .tabItem { Label("Dashboard", systemImage: "sparkline") }
+                .tabItem { Label("Dashboard", systemImage: "chart.xyaxis.line") }
             NavigationStack { HistoryView(showingNewSession: $showingNewSession) }
                 .tabItem { Label("History", systemImage: "clock.arrow.circlepath") }
             NavigationStack { AnalyticsView() }

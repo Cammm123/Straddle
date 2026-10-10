@@ -34,9 +34,15 @@ final class SessionStore: ObservableObject {
         self.fileURL = fileURL ?? Self.defaultFileURL(fileManager: fileManager)
         encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
-        encoder.dateEncodingStrategy = .iso8601
+        encoder.dateEncodingStrategy = .custom { date, encoder in
+            var container = encoder.singleValueContainer()
+            try container.encode(date.timeIntervalSinceReferenceDate)
+        }
         decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .iso8601
+        decoder.dateDecodingStrategy = .custom { decoder in
+            let container = try decoder.singleValueContainer()
+            return Date(timeIntervalSinceReferenceDate: try container.decode(Double.self))
+        }
         if loadImmediately { load() }
     }
 

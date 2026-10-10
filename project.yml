@@ -9,6 +9,7 @@ settings:
   base:
     SWIFT_VERSION: "5.10"
     ALWAYS_SEARCH_USER_PATHS: NO
+    DEVELOPMENT_TEAM: CLZCN5NC8V
 targets:
   Straddle:
     type: application
@@ -21,6 +22,8 @@ targets:
       base:
         PRODUCT_NAME: Straddle
         PRODUCT_BUNDLE_IDENTIFIER: com.cameronkani.straddle
+        MARKETING_VERSION: 1.0.0
+        CURRENT_PROJECT_VERSION: 1
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_CFBundleDisplayName: Straddle
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
