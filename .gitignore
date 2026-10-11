@@ -1,8 +1,17 @@
-# Xcode
-*.xcodeproj/xcuserdata/
+# Generated Xcode projects and build output
+*.xcodeproj/
 *.xcworkspace/xcuserdata/
 DerivedData/
 .build/
+*.xcarchive
+*.ipa
+*.dSYM
+*.xcresult
+
+# Signing and provisioning artifacts
+*.mobileprovision
+*.p12
+*.cer
 
 # macOS
 .DS_Store
