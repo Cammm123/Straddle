@@ -2,6 +2,22 @@
 
 Straddle is a privacy-first, local-only iPhone app for tracking poker sessions, profit, bankroll trends, and performance analytics.
 
+<p align="center">
+  <img src="docs/images/straddle-showcase.png" alt="Straddle dashboard, session history, and analytics displayed in restrained iPhone frames" width="100%">
+</p>
+
+<p align="center"><em>Real SwiftUI screens rendered with synthetic demonstration sessions. No personal poker data is shown.</em></p>
+
+## Interface
+
+<p align="center">
+  <img src="docs/images/dashboard-framed.png" alt="Straddle dashboard with cumulative profit trend" width="31%">
+  &nbsp;
+  <img src="docs/images/history-framed.png" alt="Straddle searchable poker session history" width="31%">
+  &nbsp;
+  <img src="docs/images/analytics-framed.png" alt="Straddle poker performance analytics" width="31%">
+</p>
+
 ## Features
 
 - Cash-game and tournament session tracking
